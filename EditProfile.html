@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="EditProfile.css" />
+    <title>Home</title>
+  </head>
+  <style>
+  </style>
+  <body>
+    <nav class="nav">
+      <div class="logo">
+        <img src="Images/Logo.png" alt="" />
+      </div>
+      <div class="right-side">
+        <div class="icons">
+          <a href="#"><img src="Images/Searcg.png" id="search" /></a>
+          <div class="icon-container">
+            <a href="#"><img src="Images/Home.png" class="home" /></a>
+            <a href="#"
+              ><img
+                src="Images/hoverHome.png"
+                class="home-hover"
+                style="display: none"
+            /></a>
+          </div>
+          <a href="#"><img src="Images/Profile.png" id="profile" /></a>
+          <a href="#"><img src="Images/Excplore.png" id="explore" /></a>
+          <a href="#"><img src="Images/Market.png" id="market" /></a>
+          <a href="#"
+            ><img src="Images/Notifications.png" id="notifications"
+          /></a>
+          <a href="#"><img src="Images/Chat.png" id="chat" /></a>
+        </div>
+        <div class="pfp">
+          <img src="Images/pfpPIC.png" alt="" />
+        </div>
+      </div>
+    </nav>
+    <div id="background">
+      <div id="headline-txt"></div>
+      <div class="we">
+        <div id="left-side"></div>
+        <div id="after-vertical">
+          <div id="vertical">
+              <div class="Edit_Profile" style="display: none;">
+                <div id="the_row">
+                  <div id="user-data"></div>
+                <div id="user-data2">
+                  <div id="personal-info"></div>
+                  <div class="double">
+                    <div class="whatever"> <h4 class="half_opacity">First Name</h4> <h3>Alex</h3></div>
+                    <div class="whatever"> <h4 class="half_opacity">First Name</h4> <h3>Alex</h3></div>
+                  </div>
+                  <div class="double2">
+                    <div class="whatever"> <h4 class="half_opacity">Phone</h4> <h3>+38349480134</h3></div>
+                    <div class="whatever"> <h4 class="half_opacity">Bio</h4> <h3>UI/UX Designer-Programmer</h3></div>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="sss">
+                    <h3>Email Adress</h3>
+                    <div class="double2">
+                      <div class="whateverr"> <h4 class="half_opacity">Your Email</h4> <a href="#">aldinahmeti321@gmail.com</a></div>
+                    </div>
+                  </div>
+                  <div class="link_your_acc">
+                    <h3>Social Connections</h3>
+                    <div class="social_connections">
+                      <button class="eachone"><a href="#"><i class='bx bxl-google' style="color: #db4437;"></i> Connect with Google</a></button>
+                      <button class="eachone"><a href="#"><i class='bx bxl-facebook-circle' style="color: #3b5998;"></i> Connect with Facebook</a></button>
+                      <button class="eachone"><a href="#"><i class='bx bxl-linkedin-square' style="color: #0077b5;"></i> Connect with LinkedIn</a></button>
+                    </div>  
+                  </div>
+                </div>    
+              </div>
+                      
+              </div> 
+              
+            </div>
+              
+          </div>          
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const background = document.getElementById("background");
+
+    background.style.width = "1195px";
+    background.style.height = "1374px";
+    background.style.backgroundColor = "white";
+    background.style.borderRadius = "16px";
+    background.style.position = "relative";
+    background.style.top = "20px";
+    background.style.margin = "0 auto";
+
+    const headLinetxt = document.getElementById("headline-txt");
+
+    headLinetxt.innerHTML = `<h1>Edit Profile</h1>`;
+    headLinetxt.style.display = "flex";
+    headLinetxt.style.justifyContent = "center";
+    headLinetxt.style.paddingTop = "20px";
+
+    const leftSide = document.getElementById("left-side");
+
+    leftSide.style.paddingRight = "20px";
+    leftSide.innerHTML = `
+  <ul id="menu-list">
+    <li><a href="#">Edit Profile <i class="fa-solid fa-user"></i></a></li>
+    <li><a href="#">Notification <i class="fa-solid fa-bell"></i></a></li>
+    <li><a href="#">Language <i class="fa-solid fa-language"></i></a></li>
+    <li><a href="#">Privacy <i class="fa-solid fa-lock"></i></a></li>
+    <li><a href="#">Blocked <i class="fa-solid fa-ban"></i></a></li>
+  </ul>
+`;
+    leftSide.style.display = "flex";
+    leftSide.style.flexDirection = "column";
+    leftSide.style.paddingTop = "80px";
+
+    const ul = document.getElementById("menu-list");
+    ul.style.listStyleType = "none";
+    ul.style.paddingLeft = "20px";
+
+    const listItems = ul.getElementsByTagName("li");
+    for (let i = 0; i < listItems.length; i++) {
+      listItems[i].style.marginBottom = "23px";
+    }
+
+    const links = ul.getElementsByTagName("a");
+    for (let i = 0; i < links.length; i++) {
+      links[i].style.textDecoration = "none";
+      links[i].style.color = "#777777";
+      links[i].style.fontSize = "20px";
+
+      links[i].addEventListener("mouseover", function () {
+        links[i].style.color = "black";
+      });
+
+      links[i].addEventListener("mouseout", function () {
+        links[i].style.color = "#777777";
+      });
+      const icons = ul.getElementsByTagName("i");
+      for (let i = 0; i < icons.length; i++) {
+        icons[i].style.marginLeft = "10px";
+      }
+    }
+
+    const container = document.querySelector(".we");
+    container.style.display = "flex";
+    container.style.alignItems = "flex-start";
+    container.style.height = "100vh";
+    container.style.gap = "20px";
+
+    const verticalLine = document.getElementById("vertical");
+
+    verticalLine.style.width = "2px";
+    verticalLine.style.height = "100vh";
+    verticalLine.style.backgroundColor = "#777777";
+    verticalLine.style.position = "relative";
+    verticalLine.style.top = "70px";
+
+    const userData = document.getElementById("user-data");
+
+    userData.style.border = "1px solid black";
+    userData.style.width = "958px";
+    userData.style.height = "143px";
+    userData.style.position="relative"
+    userData.style.left="20px"
+    userData.style.borderRadius="20px"
+    userData.style.display="flex"
+    userData.innerHTML = `
+  <img src="Images/discpfp.png" alt="" style="width: 113px; height: 113px; border-radius: 50%; background-color: transparent; position: relative; top: 10px; left: 20px;">
+  <h1 id="h1">Change your profile picture</h1>
+`;
+  const headLine=document.getElementById("h1")
+  headLine.style.position="relative"
+  headLine.style.left="40px"
+  headLine.style.top="45px"
+  headLine.style.color="black"
+  
+  const theRow=document.getElementById("the_row")
+
+  theRow.style.display="flex"
+  theRow.style.flexDirection="column"
+  theRow.style.gap="20px"
+
+  const userData2=document.getElementById("user-data2")
+
+  
+  userData2.style.border = "1px solid black";
+    userData2.style.width = "958px";
+    userData2.style.height = "250px";
+    userData2.style.position="relative"
+    userData2.style.left="20px"
+    userData2.style.borderRadius="20px"
+
+    const personalInfo = document.getElementById("personal-info")
+
+    personalInfo.innerHTML=`<h3> Personal Information</h3>`
+    personalInfo.style.paddingLeft="20px"
+    personalInfo.style.paddingTop="20px"
+    personalInfo.style.fontSize="20px"
+
+    
+
+    
+
+
+  </script>
+  <script
+    src="https://kit.fontawesome.com/9399f1e0d8.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

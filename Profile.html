@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Profile.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Centered Image Example</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      overflow-x: hidden;
+    }
+  </style>
+  <body>
+    <nav class="nav">
+      <div class="logo">
+        <img src="Images/Logo.png" alt="Logo" />
+      </div>
+      <div class="right-side">
+        <div class="icons">
+          <a href="#"><img src="Images/Searcg.png" id="search" /></a>
+          <div class="icon-container">
+            <a href="#"><img src="Images/Home.png" class="home" /></a>
+            <a href="#"
+              ><img
+                src="Images/hoverHome.png"
+                class="home-hover"
+                style="display: none"
+            /></a>
+          </div>
+          <a href="#"><img src="Images/Profile.png" id="profile" /></a>
+          <a href="#"><img src="Images/Excplore.png" id="explore" /></a>
+          <a href="#"><img src="Images/Market.png" id="market" /></a>
+          <a href="#"
+            ><img src="Images/Notifications.png" id="notifications"
+          /></a>
+          <a href="#"><img src="Images/Chat.png" id="chat" /></a>
+        </div>
+        <div class="pfp">
+          <img src="Images/pfpPIC.png" alt="Profile Pic" />
+        </div>
+      </div>
+    </nav>
+
+    <div id="top-content" style="background-color: #fff; height: 400px">
+      <div
+        id="img-container"
+        style="
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <img
+          src="Images/90s-anime-aesthetic-wric2do30b1rjds3.jpg"
+          alt="Musashi"
+          id="actual-img"
+          style="
+            width: 1200px;
+            height: 150px;
+            object-fit: cover;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+          "
+        />
+      </div>
+      <div id="profilePic">
+        <img
+          src="Images/tt.png"
+          id="actual-profile"
+          style="width: 150px; height: 150px; border: 3px solid white"
+        />
+        <div id="profile-info">
+          <div id="">
+            <div id="username"></div>
+            <div id="email"></div>
+          </div>
+
+          <a href="#">
+            <img src="Images/EditProfile3.png" id="edit-profile-btn" />
+          </a>
+        </div>
+      </div>
+      <div id="profile-information">
+        <a href="#" id="information"></a>
+      </div>
+
+      <div id="posts-section" class="content-section" style="display: none">
+        <div id="pics">
+          <img src="postsimg/Rectangle 103.png" alt="" />
+          <img src="postsimg/Rectangle 104.png" alt="" />
+          <img src="postsimg/Rectangle 131.png" alt="" />
+          <img src="postsimg/Rectangle 132.png" alt="" />
+          <img src="postsimg/Rectangle 35.png" alt="" />
+          <img src="postsimg/Rectangle 54.png" alt="" />
+          <img src="postsimg/Rectangle 55.png" alt="" />
+          <img src="postsimg/Rectangle 56.png" alt="" />
+        </div>
+      </div>
+
+      <div id="about-section" class="content-section" style="display: none">
+        <div class="profile-container">
+          <div class="sidebar">
+            <h2>About</h2>
+            <ul>
+              <li id="overview" class="tab active">
+                Overview <i class="bx bx-home"></i>
+              </li>
+              <li id="work" class="tab">
+                Work <i class="bx bx-briefcase"></i>
+              </li>
+              <li id="education" class="tab">
+                Education <i class="bx bxs-graduation"></i>
+              </li>
+              <li id="contacts" class="tab">
+                Contacts <i class="bx bx-user"></i>
+              </li>
+            </ul>
+          </div>
+
+          <div class="main-content">
+            <div id="overview-content" class="content active-content">
+              <div class="header">
+                <h2>Alvin Lackerman</h2>
+                <button class="edit-button">
+                  Edit <i class="bx bx-edit"></i>
+                </button>
+              </div>
+              <h4>Experienced UI/UX designer</h4>
+              <p>
+                Innovative and detail-oriented UI/UX Designer with a proven
+                track record of crafting engaging and intuitive digital
+                experiences. With a keen eye for aesthetics and a deep
+                understanding of user-centric design principles, I am dedicated
+                to creating seamless and visually appealing interfaces that
+                enhance user satisfaction and drive business goals.
+              </p>
+            </div>
+
+            <div id="work-content" class="content">
+              <div class="header">
+                <h2>Work</h2>
+              </div>
+              <h4>Previous UI/UX Roles</h4>
+              <p>
+                I have worked at several companies where I led UI/UX
+                initiatives, designing innovative and visually appealing user
+                interfaces for web and mobile applications.
+              </p>
+            </div>
+
+            <div id="education-content" class="content">
+              <div class="header">
+                <h2>Education</h2>
+              </div>
+              <h4>University Degree in Design</h4>
+              <p>
+                I graduated from XYZ University with a degree in Design and User
+                Experience, which laid the foundation for my career as a UI/UX
+                designer.
+              </p>
+            </div>
+
+            <div id="contacts-content" class="content">
+              <div class="header">
+                <h2>Contacts</h2>
+              </div>
+              <h4>Get in Touch</h4>
+              <p>
+                Feel free to reach out to me via email at alvin@example.com, or
+                connect with me on LinkedIn at linkedin.com/in/alvin-lackerman.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="friends-section" class="content-section" style="display: none">
+        <div class="content-wrapper">
+          <input type="text" placeholder="Search" id="searchh" />
+        </div>
+        <div class="both-contents">
+          <div class="friendlist-profiles">
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+              <button id="btnn"><a href="#">Unfriend </a></button>
+            </div>
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+              <button id="btnn"><a href="#">Unfriend </a></button>
+            </div>
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+              <button id="btnn"><a href="#">Unfriend </a></button>
+            </div>
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+              <button id="btnn"><a href="#">Unfriend </a></button>
+            </div>
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+              <button id="btnn"><a href="#">Unfriend </a></button>
+            </div>
+          </div>
+          <div class="friendlist-profiles-2">
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+              <button id="btnn"><a href="#">Unfriend </a></button>
+            </div>
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+              <button id="btnn"><a href="#">Unfriend </a></button>
+            </div>
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+              <button id="btnn"><a href="#">Unfriend </a></button>
+            </div>
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+              <button id="btnn"><a href="#">Unfriend </a></button>
+            </div>
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+              <button id="btnn"><a href="#">Unfriend </a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="requests-section" class="content-section" style="display: none">
+        <div class="content-wrapper">
+          <input type="text" placeholder="Search" id="searchh" />
+        </div>
+        <div class="both-contents">
+          <div class="friendlist-profiles">
+            <div class="friendd1">
+              <img src="Images/discpfp1.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+              <button id="btnn"><a href="#">Accept </a></button>
+            </div>
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+              <button id="btnn"><a href="#">Remove </a></button>
+            </div>
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+              <button id="btnn"><a href="#">Remove </a></button>
+            </div>
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+              <button id="btnn"><a href="#">Accept </a></button>
+            </div>
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+              <button id="btnn"><a href="#">Accept </a></button>
+            </div>
+          </div>
+          <div class="friendlist-profiles-2">
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+              <button id="btnn"><a href="#">Remove </a></button>
+            </div>
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+              <button id="btnn"><a href="#">Accept </a></button>
+            </div>
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+              <button id="btnn"><a href="#">Accept </a></button>
+            </div>
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+              <button id="btnn"><a href="#">Remove </a></button>
+            </div>
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+              <button id="btnn"><a href="#">Accept </a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="shop-section" class="content-section" style="display: none">
+        <div class="bothh">
+          <div class="keyboard-card">
+            <img
+              src="Images/KB1.png"
+              class="keyboard-image"
+              alt="Mechanical Keyboard"
+            />
+            <div class="txtt">
+              <h4>Mechanical Keyboard</h4>
+              <p>3 items 25$</p>
+            </div>
+          </div>
+
+          <div class="keyboard-card">
+            <img
+              src="Images/kb2.png"
+              class="keyboard-image"
+              alt="Dark mode Keyboard"
+            />
+            <div class="txtt">
+              <h4>Dark mode Keyboard</h4>
+              <p>3 items 25$</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="profile-views-section"
+        class="content-section"
+        style="display: none"
+      >
+        <div class="content-wrapper">
+          <input type="text" placeholder="Search" id="searchh" />
+        </div>
+        <div class="both-contents">
+          <div class="friendlist-profiles">
+            <div class="friendd1">
+              <img src="Images/discpfp1.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+            </div>
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+            </div>
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+              <button id="btnn"><a href="#">Add Friend </a></button>
+            </div>
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+            </div>
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+            </div>
+          </div>
+          <div class="friendlist-profiles-2">
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+            </div>
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+              <button id="btnn"><a href="#">Add Friend </a></button>
+            </div>
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+            </div>
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+            </div>
+            <div class="friendd1">
+              <img src="Images/discpfp.png" alt="" />
+              <div class="infor">
+                <h2>Burim Qorrolli</h2>
+                <h4>bruim_qorrolli</h4>
+              </div>
+              <button id="btnn"><a href="#">Add Friend </a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const content = document.getElementById("top-content");
+      const imgContainer = document.getElementById("img-container");
+      const img = document.getElementById("actual-img");
+      const profileImg = document.getElementById("actual-profile");
+      const proFile = document.getElementById("profilePic");
+      const profileInfo = document.getElementById("profile-info");
+      const editProfile = document.getElementById("edit-profile-btn");
+      const userName = document.getElementById("username");
+      const email = document.getElementById("email");
+      const profileInformation = document.getElementById("profile-information");
+      const information = document.getElementById("information");
+      const aboutSection = document.getElementById("about-section");
+
+      content.style.width = "100%";
+      content.style.height = "400px";
+
+      imgContainer.style.display = "flex";
+      imgContainer.style.justifyContent = "center";
+      imgContainer.style.alignItems = "center";
+
+      img.style.maxWidth = "100%";
+      img.style.maxHeight = "100%";
+      img.style.objectFit = "cover";
+      img.style.borderBottomLeftRadius = "50px";
+      img.style.borderBottomRightRadius = "50px";
+
+      profileImg.style.borderRadius = "50%";
+      proFile.style.width = "auto";
+      proFile.style.height = "auto";
+      proFile.style.position = "relative";
+      proFile.style.left = "400px";
+      proFile.style.marginTop = "-50px";
+
+      userName.innerHTML = `<h2>Alvin Ackerman</h2>
+      <h4>29 <span class="text-part"> Friends </span></h4>
+      <h4>3 <span class="text-part"> Posts</span></h4>
+      <h4>3 <span class="text-part">Items</span></h4>
+      `;
+
+      const textParts = document.querySelectorAll(".text-part");
+      textParts.forEach((part) => {
+        part.style.color = "black";
+        part.style.opacity = "50%";
+      });
+      userName.style.display = "flex";
+      userName.style.alignItems = "center";
+      userName.style.gap = "12px";
+
+      email.innerHTML = `@nani_tf`;
+      email.style.color = "black";
+      email.style.opacity = "50%";
+      email.style.paddingTop = "5px";
+
+      profileInformation.style.display = "flex";
+      profileInformation.style.justifyContent = "center";
+      profileInformation.style.gap = "20px";
+      information.style.paddingLeft = "2%";
+      information.innerHTML = `
+       <h4 class="info-item" id="posts">Posts</h4>
+       <h4 class="info-item" id="about">About</h4>
+       <h4 class="info-item" id="friends">Friends</h4>
+       <h4 class="info-item" id="requests">Requests</h4>
+       <h4 class="info-item" id="shop">Shop</h4>
+       <h4 class="info-item" id="profile-views">Profile Views</h4>
+       `;
+
+      const infoItems = document.querySelectorAll(".info-item");
+      infoItems.forEach((item) => {
+        item.style.color = "rgba(0, 0, 0, 1)";
+        item.style.cursor = "pointer";
+        item.style.textDecoration = "none";
+
+        item.addEventListener("click", function () {
+          infoItems.forEach((otherItem) => {
+            otherItem.style.color = "rgba(0, 0, 0, 0.5";
+            otherItem.style.textDecoration = "none";
+          });
+
+          item.style.color = "rgba(0, 0, 0, 1)";
+          item.style.textDecoration = "underline";
+        });
+      });
+      function hideAllSections() {
+        const sections = document.querySelectorAll(".content-section");
+        sections.forEach((section) => {
+          section.style.display = "none";
+        });
+      }
+
+      function showSection(sectionId) {
+        hideAllSections();
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.style.display = "";
+        }
+      }
+
+      infoItems.forEach((item) => {
+        item.addEventListener("click", function () {
+          infoItems.forEach((otherItem) => {
+            otherItem.style.color = "rgba(0, 0, 0, 0.5)";
+            otherItem.style.textDecoration = "none";
+          });
+
+          item.style.color = "rgba(0, 0, 0, 1)";
+          item.style.textDecoration = "underline";
+
+          switch (item.id) {
+            case "posts":
+              showSection("posts-section");
+              break;
+            case "about":
+              showSection("about-section");
+              break;
+            case "friends":
+              showSection("friends-section");
+              break;
+            case "requests":
+              showSection("requests-section");
+              break;
+            case "shop":
+              showSection("shop-section");
+              break;
+            case "profile-views":
+              showSection("profile-views-section");
+              break;
+            default:
+              hideAllSections();
+          }
+        });
+      });
+
+      information.style.display = "flex";
+      information.style.justifyContent = "center";
+      information.style.gap = "60px";
+      information.style.textDecoration = "none";
+      information.style.color = "black";
+      information.style.fontSize = "20px";
+      information.style.paddingTop = "60px";
+      information.style.color = "black";
+      information.style.opacity = "50%";
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll(".tab");
+        const contents = document.querySelectorAll(".content");
+
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", function () {
+            tabs.forEach((t) => t.classList.remove("active"));
+            contents.forEach((content) =>
+              content.classList.remove("active-content")
+            );
+
+            this.classList.add("active");
+            document
+              .getElementById(`${this.id}-content`)
+              .classList.add("active-content");
+          });
+        });
+      });
+
+      const shopItems = document.getElementById("shop-section");
+
+      shopItems.style.display = "flex";
+      shopItems.style.justifyContent = "center";
+      shopItems.style.paddingTop = "20px";
+      shopItems.style.gap = "20px";
+
+      const left = document.getElementById("left");
+
+      left.innerHTML = `
+      <img src="Images/KB1.png" />
+        <h4>Mechanical Keyboard</h4>
+       `;
+    </script>
+  </body>
+</html>

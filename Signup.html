@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="Signup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <div class="signup-box">
+          <h2>Sign Up</h2>
+          <p>Already have an account? <a href="Login.html">Log In</a></p>
+          <form>
+            <div class="input-box">
+              <input type="text" placeholder="Full Name" required />
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="User Name" required />
+            </div>
+            <div class="input-box">
+              <input type="email" placeholder="Enter Your Email" required />
+            </div>
+            <div class="input-box">
+              <input
+                type="password"
+                placeholder="Enter Your Password"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <input type="password" placeholder="Confirm Password" required />
+            </div>
+            <div class="input-boxes">
+              <div class="input-box half-width">
+                <select required>
+                  <option value="" disabled selected>Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="input-box half-width">
+                <input type="date" placeholder="Date of Birth" required />
+              </div>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="terms" required />
+              <label for="terms">I agree to Terms and Privacy Policy</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="notify" />
+              <label for="notify">I want to be notified by email</label>
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+          </form>
+        </div>
+      </div>
+      <div class="right-side">
+        <img src="Images/Rectangle 36.png" alt="Typing on a Laptop" />
+      </div>
+    </div>
+    <script src="Signup.js"></script>
+  </body>
+</html>
